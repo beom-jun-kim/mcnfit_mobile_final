@@ -1,0 +1,19 @@
+.xans-search-frompackage .xans-search-boardform fieldset { min-width:130px; }
+.xans-search-frompackage .xans-search-boardform select#search_type { width:100px; }
+.xans-search-frompackage .xans-search-boardform input#keyword { width:100%; margin:0 0 0 4px; }
+
+.xans-search-frompackage .resultArea { overflow:hidden; min-width:306px; margin:7px 0 14px 0; font-size:12px !important; }
+.xans-search-frompackage .resultArea p { padding:7px 0 0; float:left; }
+.xans-search-frompackage .resultArea #limit { float:right; }
+
+.xans-search-frompackage.ec-base-layer {background: none;}
+.xans-search-frompackage.ec-base-layer h1 {background: #1e1e1e; color: #e9e9e9; font-size: .9rem;}
+.xans-search-frompackage .ec-base-prdInfo .thumbnail {height: auto;}
+.xans-search-frompackage .ec-base-prdInfo .thumbnail img {height: 100%;}
+.xans-search-frompackage .ec-base-prdInfo .description .info .price {font-size: var(--small-font);}
+.xans-search-frompackage .ec-base-button.gLeft {border: 1px solid #d5d5d5; line-height: 37px; padding: 0 10px; font-size: var(--normal-font); margin: 30px auto;}
+.xans-search-frompackage .ec-base-field input ~ [class*='btn'] {border: 1px solid #d5d5d5; font-size: .9rem;}
+.xans-search-frompackage select {font-size: .9rem;}
+
+
+.xans-search-frompackage .ec-base-paginate.typeList ol li .this {color: #df1e1e;}

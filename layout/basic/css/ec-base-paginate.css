@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+  .ec-base-paginate { text-align:center; }
+
+/* typeList */
+.ec-base-paginate.typeList {display: flex; justify-content: center; padding:14px 0; line-height:0; }
+.ec-base-paginate.typeList ol,
+.ec-base-paginate.typeList ol li { /* display:inline-block; */ display: flex; vertical-align:middle; }
+.ec-base-paginate.typeList ol li a { display:inline-block; width:31px; height:27px; border:1px solid #d9d9d9; font-size: var(--small-font); line-height:28px; color:#1b1b1b; vertical-align:middle; border-right: none;}
+.ec-base-paginate.typeList ol li .this { color:var(--primary-color); }
+.ec-base-paginate.typeList [class*='btn'] { display: inline-block; width: 31px; height: 27px; line-height: 28px; border: 1px solid #d5d5d5; color: #8b8b8b; vertical-align: middle; font-size: var(--small-font); border-right: none;}
+.ec-base-paginate.typeList [class*='btn']:last-child {border-right: 1px solid #d5d5d5;}
+
+/* typeMoreview */
+.ec-base-paginate.typeMoreview { margin:0 auto; }
+.ec-base-paginate.typeMoreview .btnMore { display:block; padding:20px 0; border-top:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; font-weight:var(--font-weight); }
+.ec-base-paginate.typeMoreview .icoMore {background: url(/web/img/detail/select_arrow.png) no-repeat 90%; width: 130px; height: 50px; padding-left: 15px; outline: none; /* display:inline-block; margin:0 0 0 8px; width:13px; height:8px; font-size:0; line-height:0; vertical-align:baseline; background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_more.png") no-repeat 0 50%; background-size:13px auto; */ }
+
+/* typeSwipe */
+.ec-base-paginate.typeSwipe { font-size:0; line-height:0; }
+.ec-base-paginate.typeSwipe button.circle { overflow:hidden; margin:0 3px 0 4px; width:13px; height:13px; border:0; border-radius:13px; cursor:pointer; background-color:#bbb; }
+.ec-base-paginate.typeSwipe button.circle.selected { background-color:var(--second-color); }
+.ec-base-paginate.typeSwipe span { overflow:hidden; font-size:1px; line-height:0; color:transparent; text-indent:-150%; }
+.ec-base-paginate.typeSwipe button.prev,
+.ec-base-paginate.typeSwipe button.next { width:31px; font-size:15px; line-height:1.2em; border:0; cursor:pointer; background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_prev.png") no-repeat 50% 50%; background-size:7px auto; }
+.ec-base-paginate.typeSwipe button.next { background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_next.png") no-repeat 50% 50%; background-size:7px auto; }
+.ec-base-paginate.typeSwipe .prev,
+.ec-base-paginate.typeSwipe .next { display:none; }
+
+/* typeZoom */
+.ec-base-paginate.typeZoom .btnPrev,
+.ec-base-paginate.typeZoom .btnNext { overflow:hidden; width:31px; height:27px; border:1px solid #d9d9d9; border-radius:2px; font-size:1px; line-height:0; color:transparent; text-indent:-150%; background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_prev.png") no-repeat 50% 50%; background-size:7px auto; }
+.ec-base-paginate.typeZoom .btnNext { background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_next.png") no-repeat 50% 50%; background-size:7px auto;  }
+
+/* typeTotal */
+.paginate.typeTotal { color:#696969; }
+.paginate.typeTotal > span { margin:0 8px;font-weight:bold; }
+.paginate.typeTotal p { display:inline-block;vertical-align:middle; }
+.paginate.typeTotal .icoPrev,
+.paginate.typeTotal .icoNext { width:7px; height:13px; font-size:15px; line-height:1.2em; background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_prev.png") no-repeat 50% 50%; background-size:7px auto; }
+.paginate.typeTotal .icoNext { background:url("//img.echosting.cafe24.com/skin/mobile/layout/btn_next.png") no-repeat 50% 50%; background-size:7px auto; }
+.paginate.typeTotal p span { overflow:hidden; display:block; width:29px; text-indent:-999px; }
+.paginate.typeTotal strong { color:#303030; }
+

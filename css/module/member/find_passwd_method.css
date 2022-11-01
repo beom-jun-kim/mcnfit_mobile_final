@@ -1,0 +1,8 @@
+.xans-member-findpasswdmethod { margin:14px 7px 0; padding:0 0 29px; color:#1b1b1b; font-size:13px; }
+.xans-member-findpasswdmethod .ec-base-table.typeWrite td { vertical-align:middle; }
+
+.xans-member-findpasswdmethod .ec-base-button {margin: 20px auto; text-align: center;}
+.xans-member-findpasswdmethod .ec-base-button.gFull [class*="btn"] {padding: .5rem 1rem;}
+
+.xans-member-findpasswdmethod label {font-size: var(--small-font);}
+.xans-member-findpasswdmethod input[type="radio"] {width: 15px; height: 15px; background-size: 15px;}

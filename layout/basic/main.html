@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <title>엠씨엔 핏(메인)</title>
+
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+
+    <!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+    <!--@js(/layout/basic/js/common.js)-->
+</head>
+<body id="main">
+    <div module="Popup_MultiPopup">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 팝업의 ID를 숫자로 넣어주세요.
+        -->
+        {$popup}
+    </div>
+    <div module="Popup_MultiBanner">
+        <!--
+            $banner_popup_no =
+            ※ 노출시킬 배너의 ID를 숫자로 넣어주세요.
+        -->
+        {$banner}
+    </div>
+    <div id="wrap">
+        <!--@import(/layout/basic/sidebar.html)-->
+        <hr class="layout">
+        <div id="container">
+            <header id="header">
+                <div class="header">
+                    <section id="topArea">
+                        <div class="searchWrap">
+                            <div class="logo_box">
+                                <a href="/index.html">
+                                    <img src="/web/img/mainscript/mcnfit-logo.png" alt="{$mall_name}" />
+                                </a>
+                            </div>
+                            <div class="header_menu-box">
+                                <div class="category"><a href="#none" class="fold"><i class="xi-bars"></i></a></div>
+                                <div class="search"><button type="button"><i class="xi-search"></i></button></div>
+                                <div module="Layout_orderBasketcount">
+                                    <a href="/order/basket.html" class="btnBasket"><i class="xi-basket"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav id="mainMenu" module="Layout_MobileMaincategory">
+                            <!--
+                                $swipe = yes
+                                $plugin = category
+                                $generate = no
+                                $gird = 3
+                                $display = no
+                            -->
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li module="Mobile_Categoryname_1" data-seq="{$display_group}"><a href="#none">{$category_name}</a></li>
+                                        <li module="Mobile_Categoryname_2" data-seq="{$display_group}"><a href="#none">{$category_name}</a></li>
+                                        <li module="Mobile_Categoryname_3" data-seq="{$display_group}"><a href="#none">{$category_name}</a></li>
+                                    </ul>
+                                </li>
+                                <li class="afterNone">
+                                    <ul>
+                                        <li module="Mobile_Categoryname_4" data-seq="{$display_group}"><a href="#none">{$category_name}</a></li>
+                                    </ul>
+                                </li>
+                             </ul>
+                            <p class="btnPrev"><a href="#none"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_prev.png" width="8" height="13" alt="이전"></a></p>
+                            <p class="btnNext"><a href="#none"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_next.png" width="8" height="13" alt="다음"></a></p>
+                        </nav>
+                    </section>
+                    <!--@import(/layout/basic/search.html)-->
+                </div>
+            </header> 
+            <hr class="layout">
+            <div id="contents">
+                <!--@contents-->
+            </div>
+            <hr class="layout">
+            <!--@import(/layout/basic/footer.html)-->
+        </div>
+    </div>
+</body>
+</html>

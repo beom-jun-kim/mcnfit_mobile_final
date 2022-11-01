@@ -1,0 +1,29 @@
+#contents { padding:0 0 8px; }
+
+.company_main_img,
+.company_wrap .img_box {font-size: 0;}
+.company_main_img img {width: 100%;}
+.company_wrap {padding: 0 10px;}
+.company_wrap section {margin-top: 50px;}
+.company_wrap .square {width: 15px; height: 5px; background: var(--second-color); position: absolute; top: 0; right: 0;}
+.company_wrap .img_box img {width: 100%;}
+
+#map_wrap .title,
+#explain_wrap .title {border-bottom: 1px solid #000; padding: 1rem 0;}
+#map_wrap .title h2,
+#history_wrap .title h2,
+#explain_wrap .title h2 {font-size: var(--big-font);}
+#explain_wrap .title span {font-size: var(--normal-font); letter-spacing: -.5px;}
+#map_wrap .desc,
+#history_wrap .desc,
+#explain_wrap .desc {font-size: var(--small-font); padding-top: 1rem; position: relative;}
+#map_wrap .desc p,
+#history_wrap .desc p,
+#explain_wrap .desc p {line-height: 20px;}
+#history_wrap .title {border-bottom: 1px solid #000; padding: 2rem 0 1rem;}
+
+#map_wrap .DRmap {margin-top: 1rem;}
+#map_wrap .companyinfo {padding: 1rem 0;}
+#map_wrap .companyinfo ul {line-height: 20px;}
+#map_wrap .companyinfo a {border: 1px solid #d5d5d5; padding: .5rem; display: inline-block; background: url(/web/img/company/map_arrow.png) no-repeat 18% 40%; background-size: 20px; margin-top: 5px;}
+#map_wrap .companyinfo .load_btn {padding-left: 2rem;}

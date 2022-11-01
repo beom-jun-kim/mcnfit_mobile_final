@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>엠씨엔 핏</title>
+    <!--@css(/layout/basic/css/common.css)-->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)-->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+
+<!-- 스마트디자인에서는 JQuery 1.4.4 버전이 내장되어있습니다. 추가로 호출하면 충돌이 생길 수 있습니다. -->
+<!--@js(/layout/basic/js/common.js)-->
+</head>
+<body id="layout">
+<div id="wrap">
+    <!--@import(/layout/basic/sidebar.html)-->
+    <hr class="layout">
+    <div id="container">
+        <header id="header">
+            <div class="header">
+                <section id="topArea">
+                    <div class="searchWrap">
+                        <div class="logo_box">
+                            <a href="/index.html">
+                                <img src="/web/img/mainscript/mcnfit-logo.png" alt="{$mall_name}" />
+                            </a>
+                        </div>
+                        <div class="header_menu-box">
+                            <div class="category"><a href="#none" class="fold"><i class="xi-bars"></i></a></div>
+                            <div class="search"><button type="button"><i class="xi-search"></i></button></div>
+                            <div module="Layout_orderBasketcount">
+                                <a href="/order/basket.html" class="btnBasket"><i class="xi-basket"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--@import(/layout/basic/search.html)-->
+            </div>
+            <!--메뉴바-->
+            <div class="mainNav" style="margin-top: 55px;">
+                <ul>
+                    <li><a href="/product/list_thumb.html?cate_no=23">New arrivals</a></li>
+                    <li><a href="/product/list_thumb.html?cate_no=24">Bundles</a></li>
+                    <li><a href="/product/list_thumb.html?cate_no=25">Top</a></li>
+                    <li><a href="/product/list_thumb.html?cate_no=26">Bottom</a></li>
+                </ul>
+                <ul class="main">
+                    <li><a href="/product/list_thumb.html?cate_no=27">Underwear</a></li>
+                    <li><a href="/product/list_thumb.html?cate_no=28">Accessories</a></li>
+                    <li><a href="/board/index.html">Community</a></li>
+                    <li><a href="/myshop/index.html">My Shopping</a></li>
+                </ul>
+            </div>            
+        </header>
+        <hr class="layout">
+        <div id="contents">
+            <!--@contents-->
+        </div>
+        <hr class="layout">
+        <!--@import(/layout/basic/footer.html)-->
+    </div>
+</div>
+</body>
+</html>

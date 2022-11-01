@@ -1,0 +1,24 @@
+/* 타이틀 */
+.xans-myshop-orderhistorylistitem .title h3 { line-height:43px; margin:7px 0 0; padding:0 0 0 14px; font-size:13px; color:#fff; background-color:#4a5164; }
+.xans-myshop-orderhistorylistitem .order h3 { overflow:hidden; padding:0 0 0 14px; line-height:43px; font-size:var(--small-font); font-weight:normal; background-color:#f6f6f6; }
+.xans-myshop-orderhistorylistitem .order h3:after { content:""; display:block; clear:both; }
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .description .prdName a {line-height: 20px;}
+.xans-myshop-orderhistorylistitem .orderList  {margin-top: 20px;}
+
+/* 상품 리스트 */
+.xans-myshop-orderhistorylistitem .order { position:relative; margin-top: 20px;}
+.xans-myshop-orderhistorylistitem .order .date { font-weight:bold; }
+.xans-myshop-orderhistorylistitem a.btnDetail { position:absolute; top:14px; right:14px; padding:0 14px 0 0; font-size:var(--small-font); font-weight: var(--font-weight);}
+.xans-myshop-orderhistorylistitem a.btnDetail i {transform: rotate(90deg); margin-left: 10px;}
+.xans-myshop-orderhistorylistitem .empty { text-align:center; padding:30px 0 30px; }
+.xans-myshop-orderhistorylistitem .request { position:relative; font-weight:var(--font-weight); color:#508bed; text-align:center; }
+.xans-myshop-orderhistorylistitem .prdFoot + .request:before { content:''; position:absolute; left:0; right:0; top:0; height:1px; background:#d5d5d5; }
+.xans-myshop-orderhistorylistitem .request [class*='btn'] { margin:6px 0; border: 1px solid #d5d5d5; padding: 2px 5px; background: #fff; border-radius: 2px;}
+.xans-myshop-orderhistorylistitem [class*="btn"].mini,
+.xans-myshop-orderhistorylistitem .btnNormal {font-size: var(--small-font); font-weight: normal; border: 1px solid #d5d5d5; padding: 5px; background: #fff; border-radius: 2px;}
+.xans-myshop-orderhistorylistitem .request [class*='btn'] {position: absolute; top: -7px; right: 65px;}
+.xans-myshop-orderhistorylistitem .request [class*='btn']:nth-child(1) {position: absolute; top: -7px; right: 0px;}
+
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail {height: auto;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .thumbnail img {height: 100%;}
+.xans-myshop-orderhistorylistitem .ec-base-prdInfo .prdBox {margin: 7px 0;}

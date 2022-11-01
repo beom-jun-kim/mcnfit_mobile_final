@@ -1,0 +1,6 @@
+.xans-myshop-wishlistbutton .select {border-top:0; margin-top: 20px; font-size: 0;}
+.xans-myshop-wishlistbutton .select .btnNormal.mini,
+.xans-myshop-wishlistbutton .select .btnSubmit {display: inline-block; width: 33.3333%; line-height: 20px; height: 40px;}
+.xans-myshop-wishlistbutton #product_select_all {border-right: none;}
+.xans-myshop-wishlistbutton .select .gRight { float:right; }
+.xans-myshop-wishlistbutton .btnNormal.mini {border-radius: 0;}

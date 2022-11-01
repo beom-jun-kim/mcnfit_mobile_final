@@ -1,0 +1,188 @@
+.xans-layout-searchheader {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: #fff;
+    height: 100vh;
+    padding: 0 1.5rem;
+}
+
+.xans-layout-searchheader .searchForm {
+    position: relative;
+    margin-top: 15px;
+    border-bottom: 2px solid #000;
+}
+
+.xans-layout-searchheader .btnDelete {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border: 0;
+    background: none;
+    font-size: var(--normal-font);
+    color: #000;
+}
+
+.xans-layout-searchheader #keyword {
+    width: 100%;
+    height: 30px;
+    padding: 0;
+    border: 0;
+    font-size: 1.2rem;
+}
+
+.xans-layout-searchheader ::placeholder {
+    opacity: .5;
+    font-weight: var(--font-weight);
+}
+
+.xans-layout-searchheader fieldset {
+    padding: 15px 0 0;
+    position: relative;
+}
+
+.xans-layout-searchheader fieldset h3 {
+    padding: 15px 0;
+    font-size: var(--big-font);
+}
+
+.xans-layout-searchheader .btnClose {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    position: relative;
+    right: -95%;
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    color: inherit;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword ul {
+    overflow-y: auto;
+    padding: 0 10px 15px;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li {
+    display: inline-block;
+    margin: 0 5px 10px 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li a {
+    display: inline-block;
+    padding: 9px 15px 8px 15px;
+    font-size: var(--small-font);
+}
+
+.xans-layout-searchheader .xans-search-hotkeyword li:last-child a:before {
+    display: none;
+}
+
+.xans-layout-searchheader .ec-base-tab {
+    margin: 20px 0;
+}
+
+.xans-layout-searchheader .ec-base-tab ul {
+    border: none;
+}
+
+.xans-layout-searchheader .ec-base-tab li {
+    border-left: none;
+    background: rgba(241, 241, 241, 0.815);
+}
+
+.xans-layout-searchheader .ec-base-tab a {
+    height: 40px;
+    padding: 0;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword p {
+    color: #787878;
+    font-size: var(--small-font);
+    text-align: center;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword ul {
+    overflow-y: auto;
+    padding: 0 20px;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li {
+    position: relative;
+    margin: 0 5px 10px 0;
+    border: 1px solid #d5d5d5;
+    border-radius: 20px;
+    display: inline-block;
+    padding-right: 23px;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li:nth-child(n+8) {
+    display: none;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li a {
+    display: inline-block;
+    padding: 9px 15px 6px 15px;
+    font-size: var(--small-font);
+    min-height: 13px;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword li .btnDelete {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0;
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword .button {
+    padding: 10px;
+    text-align: center;
+}
+
+.xans-layout-searchheader .xans-search-recentkeyword .button .btnDeleteAll {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #d5d5d5;
+    font-size: var(--small-font);
+    background-color: #fff;
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.xans-layout-searchheader .search_slider h3 {
+    margin: 20px 0;
+    font-size: var(--big-font);
+}
+
+.xans-layout-searchheader .best_search_item li:last-child,
+.xans-layout-searchheader .best_search_item li:first-child {
+    padding: 0;
+}
+
+.xans-layout-searchheader .best_search_item li {
+    padding: 0 .3rem;
+    width: 50%;
+}
+
+.xans-layout-searchheader .best_search_item img {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

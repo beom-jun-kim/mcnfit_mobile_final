@@ -1,0 +1,4 @@
+/* 쿠폰번호 등록 영역 */
+.xans-myshop-couponserial .formBox { margin:14px 0; padding:0 14px 14px; border:1px solid #d5d5d5; border-right: none; border-left: none; }
+.xans-myshop-couponserial .formBox h3 { padding:14px 0 14px; font-weight:bold; font-size:var(--small-font); }
+.xans-myshop-couponserial .formBox input[type="text"] { width:100%; }

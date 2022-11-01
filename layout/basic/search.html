@@ -1,0 +1,89 @@
+<div module="Layout_SearchHeader" class="searchBox" id="{$search_box_id}">
+    <!--@css(/css/module/layout/searchHeader.css)-->
+    <!--
+        $category_page=/product/list.html
+    -->
+    <fieldset>
+        <button type="button" class="btnClose" id="{$search_cancel_id}"><i class="xi-close-square"></i></button>
+        <legend>검색</legend>
+        <h3>무엇을 찾으시나요?</h3>
+        <div class="searchForm">
+            {$form.keyword}
+            <button type="button" class="btnDelete"><i class="xi-close-min"></i></button>
+            <!-- <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_search.png" alt=""> -->
+        </div>
+    </fieldset>
+    <div class="ec-base-tab">
+        <ul class="searchTab {$hot_use_display|display}">
+            <li class="selected"><a href="#none">인기 검색어</a></li>
+            <li><a href="#none">최근 검색어</a></li>
+        </ul>
+    </div>
+    <div module="search_hotkeyword">
+        <ul>
+            <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+            <li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+        </ul>
+    </div>
+    <div module="search_recentkeyword">
+        <p class="{$recent_none_display|display}">최근 검색어가 없습니다.</p>
+        <ul class="{$recent_list_display|display}">
+            <li data-index="{$recent_keyword_index}">
+                <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+            </li>
+            <li data-index="{$recent_keyword_index}">
+                <a href="{$recent_keyword_url}">{$recent_keyword_name}</a>
+                <button type="button" class="btnDelete" onclick="{$recent_keyword_remove}">삭제</button>
+            </li>
+        </ul>
+        <div class="button">
+            <button type="button" class="btnDeleteAll" onclick="{$recent_keyword_remove_all}">검색기록 전체삭제</button>
+        </div>
+    </div>
+    <div class="search_slider">
+        <h3>자주 검색되는 상품이에요!</h3>
+        <ul class="best_search_item" style="overflow-x: auto; white-space: nowrap;">
+            <li style="display: inline-block;">
+                <a href="/product/mtbjlmtrs-speedy-craft-%EC%8A%A4%ED%94%BC%EB%94%94-%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8-%EC%A0%B8%EC%A7%80%EB%B0%98%EB%B0%94%EC%A7%80-%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%EC%84%B8%ED%8A%B8/462/category/24/display/1/">
+                    <img src="//m.mcnfit.co.kr/web/product/medium/202206/f8bc5ff430f19ae3edede6b9a1eb329c.jpg" class="bigImage" alt="[MTBJL+MTRS-SPEEDY CRAFT] 스피디 크래프트 져지+반바지 스포츠웨어 세트">
+                </a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="/product/mtbjlmtrs-shifter-%EC%89%AC%ED%94%84%ED%84%B0-%EC%A0%B8%EC%A7%80%EB%B0%98%EB%B0%94%EC%A7%80-%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%EC%84%B8%ED%8A%B8/461/category/24/display/1/">
+                    <img src="//m.mcnfit.co.kr/web/product/medium/202206/36d0ce16c5b747c65676ff252f9f24d9.jpg" class="bigImage" alt="[MTBJL+MTRS-SPEEDY CRAFT] 스피디 크래프트 져지+반바지 스포츠웨어 세트">
+                </a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="/product/mtbjlmtrs-circuit-breaker-%EC%8D%A8%ED%82%B7-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%BB%A4-%EC%A0%B8%EC%A7%80%EB%B0%98%EB%B0%94%EC%A7%80-%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%EC%84%B8%ED%8A%B8/460/category/24/display/1/">
+                    <img src="//m.mcnfit.co.kr/web/product/medium/202206/103e7f12e06b1e5205ff0e70144d6ddc.jpg" class="bigImage" alt="[MTBJL+MTRS-SPEEDY CRAFT] 스피디 크래프트 져지+반바지 스포츠웨어 세트">
+                </a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="/product/mtbjlmtrs-circuit-breaker-%EC%8D%A8%ED%82%B7-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%BB%A4-%EC%A0%B8%EC%A7%80%EB%B0%98%EB%B0%94%EC%A7%80-%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%EC%84%B8%ED%8A%B8/460/category/24/display/1/">
+                    <img src="//m.mcnfit.co.kr/web/product/medium/202206/103e7f12e06b1e5205ff0e70144d6ddc.jpg" class="bigImage" alt="[MTBJL+MTRS-SPEEDY CRAFT] 스피디 크래프트 져지+반바지 스포츠웨어 세트">
+                </a>
+            </li>
+            <li style="display: inline-block;">
+                <a href="/product/mtbjlmtrs-circuit-breaker-%EC%8D%A8%ED%82%B7-%EB%B8%8C%EB%A0%88%EC%9D%B4%EC%BB%A4-%EC%A0%B8%EC%A7%80%EB%B0%98%EB%B0%94%EC%A7%80-%EC%8A%A4%ED%8F%AC%EC%B8%A0%EC%9B%A8%EC%96%B4-%EC%84%B8%ED%8A%B8/460/category/24/display/1/">
+                    <img src="//m.mcnfit.co.kr/web/product/medium/202206/103e7f12e06b1e5205ff0e70144d6ddc.jpg" class="bigImage" alt="[MTBJL+MTRS-SPEEDY CRAFT] 스피디 크래프트 져지+반바지 스포츠웨어 세트">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- 밑에는 최근 본 상품 슬라이드 넣을 계획 -->
+
+
+<script>
+
+    // input box 문자 실제참조 없애기
+    $('.xans-layout-searchheader .searchForm img').each(function () {
+        $($(this)[0].nextSibling).remove();
+    });
+
+    // input placeholder 추가
+    $('.xans-layout-searchheader input[id="keyword"]').attr("placeholder", "검색어를 입력해주세요.");
+
+</script>

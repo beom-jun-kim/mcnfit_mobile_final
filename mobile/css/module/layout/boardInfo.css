@@ -1,0 +1,32 @@
+.xans-board-mainpackage { margin:14px 7px 0; border:1px solid #d5d5d5; border-bottom:none; background:#fff; }
+.xans-board-mainpackage a { display:block; padding:12px 35px 11px 32px; line-height:1.5em; color:#1b1b1b; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/btn_more_board.png") no-repeat scroll 97% 50%; background-size:8px 13px; }
+.xans-board-mainpackage li { border-bottom:1px solid #d5d5d5; }
+
+/* 게시판 메인 (일반) */
+.xans-board-mainpackage div.xans-layout-boardinfo li { background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_borad.png") no-repeat 14px 50%; background-size:11px 13px; }
+
+/* 게시판 메인 (운영일지) */
+.xans-board-mainpackage div.xans-layout-opdiarybanner li { background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_opdiary.png") no-repeat 14px 50%; background-size:12px 13px; }
+
+#contents { padding:0 0 29px; }
+
+/* 게시판 메인 (긴급문의) */
+.xans-board-mainpackage div.xans-layout-sosbanner li { background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_urgency.png") no-repeat 14px 50%; background-size:12px 13px; }
+
+/*게시판 탭메뉴 컨텐츠 영역*/
+#slideBoardList { display:none; }
+.xans-layout-boardinfo { 
+    margin:0;
+    padding:10px 20px 15px;
+    border-top:0;
+    clear:both;
+}
+.xans-layout-boardinfo a { 
+    display:block;
+    text-align:left;
+    line-height:36px;
+    font-size:12px;
+    font-weight:bold;
+    color:#484848;
+    border-bottom:1px #e8e8e8 solid;
+}

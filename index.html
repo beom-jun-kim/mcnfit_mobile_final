@@ -1,0 +1,845 @@
+<!--@layout(/layout/basic/main.html)-->
+
+<div class="mainBanner" module="Mobile_Banner">
+    <!--
+        $swipe = yes
+        $custom = no
+    -->
+    <ul>
+        <li><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+        <li class="afterNone"><a href="{$banner_link_url}"><img src="{$banner_image_url}" width="100%" alt=""></a></li>
+    </ul>
+</div>
+
+<div moduel="layout_logincheck">
+    <!--
+        $url = /member/login.html
+        ※ 로그인 후, 이동할 페이지 url을 지정할 수 있는 변수
+    -->
+</div>
+
+
+
+<!--메인 최상단 배너-->
+<div class="mainBann">
+	<div app4you-smart-banner="smart-banner-admin-MO00001" class="-xans-element- xans-smart-banner-admin xans-smart-banner-admin-MO00001" data-banner-name="상단배너 영역">
+        <div class="main_banner_wrap">
+            <div>
+                <a href="/category/bundles/여름용품/24/"><img src="/web/img/m-mainscript/m-mainscript-220630--01.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="/category/매쉬-마스크/46/"><img src="/web/img/m-mainscript/m-mainscript-220630--02.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a href="/category/여름용품/40/"><img src="/web/img/m-mainscript/m-mainscript-220630--03.jpg" alt="" /></a>
+            </div>
+          </div>
+	</div>
+</div>
+
+<!--메뉴바-->
+<div class="mainNav">
+    <ul>
+        <li style="padding-top: 3px; height: 40px;"><a href="/product/list_thumb.html?cate_no=23">New arrivals</a></li>
+        <li style="padding-top: 3px; height: 40px;"><a href="/product/list_thumb.html?cate_no=24">Bundles</a></li>
+        <li style="padding-top: 3px; height: 40px;"><a href="/product/list_thumb.html?cate_no=25">Top</a></li>
+        <li style="padding-top: 3px; height: 40px;"><a href="/product/list_thumb.html?cate_no=26">Bottom</a></li>
+    </ul>
+    <ul class="main">
+        <li><a href="/product/list_thumb.html?cate_no=27">Underwear</a></li>
+        <li><a href="/product/list_thumb.html?cate_no=28">Accessories</a></li>
+        <li><a href="/board/index.html">Community</a></li>
+        <li><a href="/myshop/index.html">My Shopping</a></li>
+    </ul>
+</div>
+
+
+
+<div class="ec-base-product typeThumb mainPrd" module="product_listmain_1">
+    <!--
+        $count = 4
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $moreview = yes
+        $cache = yes
+    -->
+    <h3>{$category_title_text}</h3>
+    <p class="sub_title_text">
+        이것이 MCN-Fit! 우리는 스포츠에 가장 적합한 재료로 <br>
+        완벽한 스포츠웨어 제작을 목표로 품질에 관해서는 타협하지 않습니다.
+    </p>
+    <ul class="prdList grid2">
+        <li>
+            <div class="thumbnail">
+                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+                <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                <ul class="spec">
+                    <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+          			<li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                    <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->
+                    <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                    <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                    <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                    <li class="cart">{$basket_icon}</li>
+                    <li class="color {$colorchip_display|display}">
+                        <div module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                            <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                        </div>
+                    </li>
+                    <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="thumbnail">
+                <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                <span class="wish">{$list_wish_icon}</span>
+            </div>
+            <div class="description">
+                <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                <ul class="spec">
+                    <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+          			<li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                    <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                    
+                    <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                    <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                    <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                    <li class="cart">{$basket_icon}</li>
+                    <li class="color {$colorchip_display|display}">
+                        <div module="product_Colorchip">
+                            <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                            <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                        </div>
+                    </li>
+                    <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div module="product_listmore_1" class="ec-base-paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}" class="btnMore">
+        더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+        <span class="icoMore"></span>
+    </a></div>
+
+
+<a href="/category/Newarrivals/23/">
+    <div class='Dr_fixed_Bg'>
+        <div class="fixed_bg_wrap">
+            <div class="fixed_img_box"></div>
+        </div>
+        <div class="new_arrivals_wrap">
+            <div class="new_arrivals_title">
+                <h3>NEW ARRIVALS</h3>
+            </div>
+            <div class="new_arrivals_desc">
+                <p>You're so serious about sports.</p>
+                <p>I prepared this for you.</p>
+                <p>You'll probably like it.</p>
+            </div>
+        </div>
+    </div>
+</a>
+
+<div class="main_product">
+    <div class="main_product_inner">
+        <div class="main_product_title">
+            <h3>무한한 가능성을 제시하는 엠씨엔 핏</h3>
+        </div>
+        <div class="main_product_sub_title">
+            <P class="sub_title_text">
+                일상과 스포츠 경계를 허물어 어디서나 편하게 착용할 수 있으며<br>
+                세련된 디자인으로 기능과 스타일 사이의 적절한 균형을 유지합니다.      
+            </P>
+        </div>
+        <div class="img-box-wrap">
+            <div class="img-box">
+                <a href="/category/Top/25/"><img src="/web/img/mainserve/mainserve-220630-01.jpg" alt="샘플이미지"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_product">
+    <div class="main_product_inner">
+        <div class="main_product_title">
+            <h3>남자들도 빠졌다!<br>미친 존재감의 남성 레깅스</h3>
+        </div>
+        <div class="main_product_sub_title">
+            <P class="sub_title_text">
+                단독으로 착용하거나 쇼츠와 매치하기 좋은 레깅스로<br>
+                압도적인 신축성으로 활동성을 증진하고, 장시간 착용에도 편안합니다.
+            </P>
+        </div>
+        <div class="img-box-wrap">
+            <div class="img-box">
+                <a href="/category/Bottom/26/"><img src="/web/img/mainserve/mainserve-220630-02.jpg" alt="샘플이미지"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main_product">
+    <div class="main_product_inner">
+        <div class="main_product_title">
+            <h3>겉보다 속이 더 강한 남자</h3>
+        </div>
+        <div class="main_product_sub_title">
+            <P class="sub_title_text">
+                멋과 편안함을 동시에 충족하는 언더웨어로 속부터 강해지세요!<br>
+                UV차단 & 냉감 흡습속건 & 향균 향취 기능성을 강화한 제품입니다
+        </div>
+        <div class="img-box-wrap">
+            <div class="img-box">
+                <a href="/category/Underwear/27/"><img src="/web/img/mainserve/mainserve-220630-03.jpg" alt="샘플이미지"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main_product_tab">
+    <div class="main_product_tab_title">
+        <h3>ACCESSORIES</h3>
+    </div>
+    <ul class="tab_nav">
+        <li><a href="#tab01">Cap</a></li>
+        <li><a href="#tab02">Headband</a></li>
+        <li><a href="#tab03">Mask</a></li>
+        <li><a href="#tab04">Summer</a></li>
+        <li><a href="#tab05">Bag</a></li>
+        <li><a href="#tab06">Warmers</a></li>
+        <li><a href="#tab07">Socks</a></li>
+        <li><a href="#tab08">etc</a></li>
+    </ul>
+    <div class="tab_content">
+        <div id="tab01">
+            <div class="ec-base-product typeThumb" module="product_listmain_3">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_3" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab02">
+            <div class="ec-base-product typeThumb" module="product_listmain_4">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_4" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab03">
+            <div class="ec-base-product typeThumb" module="product_listmain_5">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_5" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab04">
+            <div class="ec-base-product typeThumb" module="product_listmain_6">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_6" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab05">
+            <div class="ec-base-product typeThumb" module="product_listmain_7">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_7" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab06">
+            <div class="ec-base-product typeThumb" module="product_listmain_8">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_8" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab07">
+            <div class="ec-base-product typeThumb" module="product_listmain_9">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_9" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+        <div id="tab08">
+            <div class="ec-base-product typeThumb" module="product_listmain_10">
+                <!--
+                    $count = 4
+                        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+                        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+                    $moreview = yes
+                    $cache = yes
+                -->
+                <!-- <h3>{$category_title_text}</h3> -->
+                <ul class="prdList grid2">
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="thumbnail">
+                            <a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+                            <span class="wish">{$list_wish_icon}</span>
+                        </div>
+                        <div class="description">
+                            <div class="icon">{$soldout_icon} {$stock_icon} {$new_icon} {$recommend_icon} {$product_icons} {$today_arrival_icon} {$pickup_icon}</div>
+                            <div class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></div>
+                            <ul class="spec">
+                                <li class="specDesc">{$simple_desc}</li><!--상품간략설명 모듈명 추가-->
+                                  <li class="specDesc">{$summary_desc}</li><!--상품요약설명 모듈명 추가-->
+                                <li class="mPriceStrike">{$disp_product_custom}</li><!--소비자가-->                        
+                                <li class="price {$product_price_display|display} {$product_sale_strike}">{$disp_product_price} <span class="{$product_price_ref_display|display}">{$txt_product_price_ref}</span><span id="span_product_price_text">{$product_tax_type_text}</span></li>
+                                <li class="price sale {$product_sale_display|display}">{$product_sale_price}</li>
+                                <li class="mileage {$mileage_icon_display}">{$mileage_value}</li>
+                                <li class="cart">{$basket_icon}</li>
+                                <li class="color {$colorchip_display|display}">
+                                    <div module="product_Colorchip">
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                        <span class="chips" style="background-color:{$color};" {$color_image}></span>
+                                    </div>
+                                </li>
+                                <li class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div module="product_listmore_10" class="ec-base-paginate typeMoreview">
+                <a href="#none" onclick="{$more_action}" class="btnMore">
+                    더보기<!-- ( --><span id="more_current_page_{$display_group}"><!-- {$current_page} --></span><!-- / --><span id="more_total_page_{$display_group}"><!-- {$total_page} --></span><!-- ) -->
+                    <span class="icoMore"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <p module="Layout_attendBanner" class="d_none">
+@css(/css/module/layout/attendBanner.css)
+    
+        $stamp_type_url = /attend/stamp.html
+        $comment_type_url = /attend/comment.html
+   
+    <a href="{$attend_url}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bnr_attend.png" alt="출석체크 이벤트(매일매일 출석도장 쾅쾅쾅!)"></a>
+</p> -->
+
+
+<!-- 인스타그램 앱
+<div class="main-insta">
+   <section id="instagramWidgetManual"></section> 인스타 사진 추가시 layout.css의 .insta > section > iframe 세로값을 조절하실 수 있습니다.
+     You may need to manually remove this code when turning the app off.
+     앱을 사용 중지 할 때이 코드를 직접 삭제해야 할 수 있습니다.
+     アプリをオフにするときに手動でこのコードを削除する必要があります。
+</div>   -->
+
+<script>
+
+    // 메인 슬라이드
+    $('.main_banner_wrap').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay:true,
+        fade: true,
+        cssEase: 'linear',
+        nextArrow: false,
+        prevArrow: false,
+    });
+
+    // 악세사리 탭 메뉴
+    $(function(){
+        $('.main_product_tab .tab_content > div').hide();
+        $('.main_product_tab .tab_nav li a').click(function(){
+            $('.main_product_tab .tab_content > div').hide().filter(this.hash).fadeIn();
+            $('.main_product_tab .tab_nav li a').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':eq(0)').click();
+    });
+
+</script>

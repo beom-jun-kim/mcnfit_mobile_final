@@ -1,0 +1,14 @@
+/* 커뮤니티 페이지 */
+.communityWrap { margin:14px 7px 0; border:1px solid #d5d5d5; border-bottom:none; background:#fff; }
+.communityWrap li { border-bottom:1px solid #d5d5d5; }
+.communityWrap .communityBox {margin:0; border-top:0; clear:both;}
+.communityWrap .communityBox a {display:block; font-size: var(--normal-font); font-weight:var(--font-weight); padding: 15px 15px 14px 25px; display: flex; align-items: center; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/btn_more_board.png") no-repeat scroll 90% 50%; background-size:8px 13px;}
+.communityWrap .communityBox i {margin-right: 5px; font-size: var(--big-font);}
+
+#contents { padding:0 0 29px; }
+
+#slideBoardList { display:none; }
+
+/* 슬라이드바 > 커뮤니티 */
+.xans-layout-boardinfo { margin:0; border-top:0; clear:both;}
+.xans-layout-boardinfo a {  display:block; font-size:var(--normal-font); font-weight:bold; border-bottom:1px #e8e8e8 solid; padding: 15px;}

@@ -1,0 +1,15 @@
+.xans-myshop-summary { margin:14px 0;}
+.xans-myshop-summary h3 { padding:14px; font-size:var(--normal-font); line-height:1.2em; color:var(--white-color); background:var(--second-color); }
+.xans-myshop-summary .ec-base-table td {padding: 12px 12px 0 0;}
+.xans-myshop-summary .ec-base-table {border-right: none; border-left: none;}
+
+/* 관련 링크 */
+/* .xans-myshop-mileagepackage .navigation { padding:0 0 14px; } */
+.xans-myshop-mileagepackage .navigation ul { border:1px solid #d5d5d5; border-right: none; border-left: none;}
+.xans-myshop-mileagepackage .navigation li { /* background:#f9f9f9; */ border-top:1px solid #ddd; }
+.xans-myshop-mileagepackage .navigation li:first-child { border-top:0; }
+.xans-myshop-mileagepackage .navigation li a { display:block; position:relative; padding: 14px 14px 14px 20px; font-weight:var(--font-weight); font-size:var(--small-font); line-height:1.2em; /* color:#4a5164; */ }
+.xans-myshop-mileagepackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px;
+    background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_arrow_gray.png") right 50% no-repeat; background-size:20px 20px;
+    transform:rotate(-90deg); -ms-transform:rotate(-90deg); -webkit-transform:rotate(-90deg);
+ }

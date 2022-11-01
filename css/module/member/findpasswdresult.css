@@ -1,0 +1,10 @@
+.xans-member-findpasswdresult  { margin:14px 7px 0; padding:0 0 29px; /* color:#353535; */ font-size:var(--normal-font); }
+.xans-member-findpasswdresult .info { padding:14px; border:1px solid #d5d5d5; text-align:center; line-height:1.6em; font-weight:var(--font-weight);}
+.xans-member-findpasswdresult .info p span { display:block; color:var(--primary-color);}
+
+.xans-member-findpasswdresult .ec-base-table { margin:14px auto 0; }
+.xans-member-findpasswdresult .ec-base-button {margin: 20px auto; text-align: center;}
+.xans-member-findpasswdresult .ec-base-button.gFull [class*="btn"] {padding: .5rem 1rem;}
+
+.xans-member-findpasswdresult label {font-size: var(--small-font);}
+.xans-member-findpasswdresult input[type="radio"] {width: 15px; height: 15px; background-size: 15px;}
